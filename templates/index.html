@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+<center>
+
+
+<p>
+
+<h2>Your clothing items</h2>
+<h4>{{input_cat_text}}</h4> <br>
+
+{% for input_image_url in input_image_urls %}
+  <img src="{{ input_image_url }}" alt="Image" width=250>
+{% endfor %}
+</p>
+<br><br>
+<br><br>
+
+<p>
+<h2>May we suggest...</h2>
+<h4>{{output_cat_text}}</h4> <br>
+{% for output_image_url in output_image_urls %}
+  <img src="{{ output_image_url }}" alt="Image" width=140>
+{% endfor %}
+
+
+
+
+</p>
+</center>
+</body>
+</html>

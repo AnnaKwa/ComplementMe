@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+
+<center>
+
+
+<p>
+
+<h2>Your clothing items</h2>
+{% for input_image_url in input_image_urls %}
+  <img src="{{ input_image_url }}" alt="Image" width=250>
+{% endfor %}
+</p>
+
+<p>
+<h2>May we suggest...</h2>
+
+{% for output_image_url in output_image_urls %}
+  <img src="{{ output_image_url }}" alt="Image" width=140>
+{% endfor %}
+
+</br>
+
+
+</p>
+</center>
+</body>
+</html>
