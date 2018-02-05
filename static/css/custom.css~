@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
+/** global **/
+body {
+	margin:0px auto;
+	padding:0;
+/*	background:#ffe0b2  ;*/
+	background:beige;
+	font-family: 'Oxygen', 'sans-serif';
+	font-size: 1.0em;
+	color: black;
+}

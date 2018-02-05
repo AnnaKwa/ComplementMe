@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Unna|Abhaya+Libre|Shanti|Playfair+Display);
+
+/** global **/
+body {
+	margin:0px auto;
+	padding:0;
+/*	background:#ffe0b2  ;*/
+	background:#F3ECE7;
+	font-family:'Shanti','Abhaya Libre', 'Unna';
+	font-size: 2em;
+	color:#984B43;
+}
+
+h1, h2, h3, h4, h5, h6{
+     font-family:'Shanti','Abhaya Libre', 'Unna','Playfair Display', arial, sans-sarif; 
+     color: #984B43;
+}
+
+.border { border-width:2px; border-color:#EBCFC4; border-style: solid; } 
+
+a, a:hover, a:visited, a:active, a:focus{
+  color:transparent;
+}
+
+
+/*  colors
+light grey: #e0d7d1
+warm dark red: #984B43 
+
+*/
