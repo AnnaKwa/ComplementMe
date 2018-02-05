@@ -1,17 +1,71 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<link rel="stylesheet" href="static/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link rel="stylesheet" href="static/css/custom.css" />
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Index</title>
+    <title>Complement Me</title>
 </head>
 <body>
 
 
 <center>
-<h3> Enter urls for each outfit piece image, separated by commas </h3>
+ <img src="static/logo.png" width=900 vspace="0" padding="100px 0px 0px 0px"  />
+<h2> Find color-matched accessories for your outfit</h2>	 
+
+<br>
+<h3> Start by uploading a full-length photo of yourself wearing an outfit!</h3>
+<h3> Make sure you are: </h3>
+<b>showing your face</b>
+<br>
+<b>not blocking your body with your arms</b>
+<br><br>
+</center>
+
+<!--
 <form method="POST">
     <input name="input_urls">
     <input type="submit">
 </form>
+-->
+
+<center>
+
+
+<!-- <div class="row" style="background:transparent url('static/img/empty-shelf.png')" height="600px"> -->
+<div class="row">
+            <div class="col-xl-5 col-lg-4"></div>
+           <div class="col-xl-2 col-lg-4 col-sm-12">
+
+             <form method = "POST" action='/submission' enctype = "multipart/form-data">
+                <input type = "file" class="form-control" name = "file" />
+                <button type="submit">  Submit</button>
+              </form>
+
+           </div>
+
+           <div class="col-xl-5 col-lg-4"></div>
+
+ </div>
+
+<h3> Or click below for a quick demo using a pre-loaded image</h3>
+<div class="row">
+            <div class="col-xl-5 col-lg-4"></div>
+           <div class="col-xl-2 col-lg-4 col-sm-12">
+<form method="get" action="/quickdemo">
+    <button type="submit">Quick Demo</button>
+</form>
+
+
+           </div>
+
+           <div class="col-xl-5 col-lg-4"></div>
+
+ </div>
 
 
 </center>
