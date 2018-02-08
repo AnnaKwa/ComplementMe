@@ -8,24 +8,22 @@
 <head>
     <title>Index</title>
 </head>
+
+
 <body>
 
-
-
-
-
 <div class="row">
-  
+
         <div class="col-xl-5 col-lg-4">
 	  <center>
-	  	  
+
 	  <h2>Your current outfit</h2>
 
 
 	  <img src="{{url_for('static', filename=input_img_file)}}" width=200 vspace="50" padding="100px 0px 0px 0px"  class="border"/>
-	 
+
 	  </center>
-	
+
 	</div>
 
 
@@ -33,7 +31,7 @@
 	<center>
 	<p>
 	  <h2> You might like... </h2>
-	  <h4>{{output_cat_text}}</h4> 
+	  <h4>{{output_cat_text}}</h4>
 	  {% for (i,output_product_url, output_image_url) in product_urls %}
 	  <a href="{{ output_product_url }}">
 	    <img src="{{ output_image_url }}" alt="Image" vspace="15" hspace="10"  width=160 padding=20px 20px 20px 20px class="border" >

@@ -33,6 +33,7 @@ sweatshirt clothing_sweater
 hoodie clothing_sweater
 jumper clothing_sweater
 blazer clothing_sweater
+wrap clothing_sweater
 pants clothing_legs
 tights clothing_legs
 leggings clothing_legs
